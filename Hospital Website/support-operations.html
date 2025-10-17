@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Operations - Rosebank Hospital IT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🏥</div>
+                    <div class="logo-text">
+                        <h1>Rosebank Hospital</h1>
+                        <p>IT Services Portal</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <a href="acquisition.html" class="btn btn-accent">Get Equipment</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="support-operations.html" class="active">Support Operations</a></li>
+                <li><a href="staff-structure.html">IT Team</a></li>
+                <li><a href="security-policy.html">Security Policy</a></li>
+                <li><a href="acceptable-use.html">Acceptable Use</a></li>
+                <li><a href="acquisition.html">Get Equipment</a></li>
+                <li><a href="disaster-recovery.html">Emergency Procedures</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h2>IT Support Operations</h2>
+                <p>How we deliver and manage IT services across the hospital</p>
+            </div>
+
+            <div class="support-process">
+                <h3>Service Desk Support Process</h3>
+                
+                <div class="process-flow">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Report</h4>
+                        <p>Contact Service Desk via phone or portal</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Log & Triage</h4>
+                        <p>Ticket created and prioritized</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Resolve</h4>
+                        <p>Level 1 or 2 technician works on issue</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Close</h4>
+                        <p>Solution confirmed with user</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-process">
+                <h3>Service Level Agreements (SLAs)</h3>
+                
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>P1 - Critical Incident</h4>
+                        <span class="sla-priority priority-critical">CRITICAL</span>
+                    </div>
+                    <p><strong>Examples:</strong> Hospital Management System down, Network outage in ward</p>
+                    <p><strong>Response Time:</strong> &lt; 15 minutes | <strong>Resolution Target:</strong> 4 hours</p>
+                </div>
+                
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>P2 - High Priority</h4>
+                        <span class="sla-priority priority-high">HIGH</span>
+                    </div>
+                    <p><strong>Examples:</strong> Doctor's computer not working, Printer malfunction</p>
+                    <p><strong>Response Time:</strong> &lt; 1 hour | <strong>Resolution Target:</strong> 8 hours</p>
+                </div>
+                
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>P3 - Medium Priority</h4>
+                        <span class="sla-priority priority-medium">MEDIUM</span>
+                    </div>
+                    <p><strong>Examples:</strong> Software installation, New user setup</p>
+                    <p><strong>Response Time:</strong> &lt; 4 hours | <strong>Resolution Target:</strong> 3 days</p>
+                </div>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>📞 Phone Support</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Extension:</strong> 401 598 7654 (HELP)</p>
+                        <p><strong>Hours:</strong> 7:00 AM - 6:00 PM, Mon-Fri</p>
+                        <p>For immediate assistance with urgent issues</p>
+                        <a href="tel:4357" class="btn">Call Now</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🌐 Online Portal</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>24/7 Ticket Submission</strong></p>
+                        <p>Track progress of existing tickets</p>
+                        <p>Access knowledge base articles</p>
+                        <button class="btn btn-secondary" onclick="showNotification('Online portal coming soon!', 'info')">Access Portal</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>👥 In-Person Support</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>IT Office:</strong> Main Block, Ground Floor</p>
+                        <p>Hardware repairs and replacements</p>
+                        <p>Equipment setup and training</p>
+                        <a href="staff-structure.html" class="btn">Find Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-process">
+                <h3>Common Solutions & Self-Help</h3>
+                <div class="quick-links">
+                    <a href="#" class="quick-link" onclick="showNotification('Password reset feature coming soon!', 'info')">
+                        <div class="quick-link-icon">🔑</div>
+                        <div class="quick-link-content">
+                            <h3>Password Reset</h3>
+                            <p>Reset your network password</p>
+                        </div>
+                    </a>
+                    <a href="#" class="quick-link" onclick="showNotification('Printer troubleshooting guide coming soon!', 'info')">
+                        <div class="quick-link-icon">🖨️</div>
+                        <div class="quick-link-content">
+                            <h3>Printer Issues</h3>
+                            <p>Troubleshoot printer problems</p>
+                        </div>
+                    </a>
+                    <a href="#" class="quick-link" onclick="showNotification('Wi-Fi connection guide coming soon!', 'info')">
+                        <div class="quick-link-icon">📶</div>
+                        <div class="quick-link-content">
+                            <h3>Wi-Fi Connection</h3>
+                            <p>Connect to hospital Wi-Fi</p>
+                        </div>
+                    </a>
+                    <a href="acquisition.html" class="quick-link">
+                        <div class="quick-link-icon">💻</div>
+                        <div class="quick-link-content">
+                            <h3>Software Installation</h3>
+                            <p>Request new software</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact IT</h3>
+                    <p>Service Desk: 401 598 7654 (HELP)</p>
+                    <p>Email: helpdesk@rosebankhospital.org.za</p>
+                    <p>Hours: 7:00 AM - 6:00 PM, Mon-Fri</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="support-operations.html">Support Operations</a>
+                    <a href="acquisition.html">Request Equipment</a>
+                    <a href="staff-structure.html">IT Team Directory</a>
+                    <a href="disaster-recovery.html">Emergency Procedures</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Policies</h3>
+                    <a href="security-policy.html">Security Policy</a>
+                    <a href="acceptable-use.html">Acceptable Use Policy</a>
+                    <a href="disaster-recovery.html">Emergency Procedures</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Rosebank Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

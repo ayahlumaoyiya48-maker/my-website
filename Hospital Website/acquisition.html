@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Procedures - Rosebank Hospital IT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🏥</div>
+                    <div class="logo-text">
+                        <h1>Rosebank Hospital</h1>
+                        <p>IT Services Portal</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <a href="support-operations.html" class="btn btn-accent">Get IT Help</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="support-operations.html">Support Operations</a></li>
+                <li><a href="staff-structure.html">IT Team</a></li>
+                <li><a href="security-policy.html">Security Policy</a></li>
+                <li><a href="acceptable-use.html">Acceptable Use</a></li>
+                <li><a href="acquisition.html">Get Equipment</a></li>
+                <li><a href="disaster-recovery.html" class="active">Emergency Procedures</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h2>IT Disaster Recovery & Emergency Procedures</h2>
+                <p>What to do during major IT system outages</p>
+            </div>
+
+            <div class="support-process">
+                <h3>🚨 Immediate Action Steps - System Down</h3>
+                
+                <div class="process-flow">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Don't Panic</h4>
+                        <p>IT is automatically alerted to major outages</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Use Paper Forms</h4>
+                        <p>Available in every department emergency kit</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Continue Care</h4>
+                        <p>Focus on patient safety first</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Wait for Updates</h4>
+                        <p>IT will provide regular status updates</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🛡️ Preventive Measures</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Daily Backups:</strong> 2:00 AM incremental + weekly full backups</p>
+                        <p><strong>UPS Protection:</strong> All servers and core network gear protected</p>
+                        <p><strong>Security Training:</strong> Regular staff training to prevent incidents</p>
+                        <p><strong>Redundant Systems:</strong> Backup servers ready for critical systems</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🔍 Detective Measures</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>24/7 Monitoring:</strong> All core systems monitored continuously</p>
+                        <p><strong>Automated Alerts:</strong> Immediate SMS/email alerts for system failures</p>
+                        <p><strong>Daily Verification:</strong> Backup integrity checked every morning</p>
+                        <p><strong>Intrusion Detection:</strong> Real-time security threat monitoring</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🔧 Corrective Measures</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>RTO:</strong> 4 hours (Critical systems restored within 4 hours)</p>
+                        <p><strong>RPO:</strong> 1 hour (Maximum 1 hour of data loss)</p>
+                        <p><strong>Backup Systems:</strong> MAINSRV002 ready for immediate deployment</p>
+                        <p><strong>Spare Equipment:</strong> Pre-configured switches and computers available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-process">
+                <h3>Specific Incident Response Procedures</h3>
+                
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>Server Failure (e.g., SRVSQL001)</h4>
+                        <span class="sla-priority priority-critical">CRITICAL</span>
+                    </div>
+                    <ol class="step-list">
+                        <li><strong>Isolate:</strong> Technicians isolate failed server</li>
+                        <li><strong>Restore:</strong> Restore from backup to standby server (MAINSRV002)</li>
+                        <li><strong>Verify:</strong> DBA verifies data integrity</li>
+                        <li><strong>Communicate:</strong> Service Desk informs staff system is back online</li>
+                    </ol>
+                </div>
+
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>Ransomware Attack</h4>
+                        <span class="sla-priority priority-critical">SECURITY INCIDENT</span>
+                    </div>
+                    <ol class="step-list">
+                        <li><strong>Contain:</strong> Immediately disconnect infected device from network</li>
+                        <li><strong>Eradicate:</strong> Wipe and re-image infected device</li>
+                        <li><strong>Recover:</strong> Restore files from last clean backup</li>
+                        <li><strong>Investigate:</strong> Conduct root cause analysis</li>
+                    </ol>
+                </div>
+
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>Network Switch Failure</h4>
+                        <span class="sla-priority priority-high">HIGH IMPACT</span>
+                    </div>
+                    <ol class="step-list">
+                        <li><strong>Identify:</strong> Locate failed switch using monitoring tools</li>
+                        <li><strong>Replace:</strong> Deploy pre-configured spare switch</li>
+                        <li><strong>Test:</strong> Verify network connectivity restored</li>
+                        <li><strong>Document:</strong> Update asset register and port mapping</li>
+                    </ol>
+                </div>
+
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>Power Outage</h4>
+                        <span class="sla-priority priority-medium">INFRASTRUCTURE</span>
+                    </div>
+                    <ol class="step-list">
+                        <li><strong>UPS Activation:</strong> Servers continue running on battery</li>
+                        <li><strong>Graceful Shutdown:</strong> If extended outage, begin systematic shutdown</li>
+                        <li><strong>Generator:</strong> Hospital generators provide backup power</li>
+                        <li><strong>Restoration:</strong> Systematic restart when power returns</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="support-process">
+                <h3>Emergency Contact Information</h3>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🚨</div>
+                    <div>
+                        <h4>IT Manager - Emergency Only</h4>
+                        <p><strong>Mobile:</strong> 555-0101</p>
+                        <p><strong>Email:</strong> itmanager-emergency@rosebankhospital.org.za</p>
+                        <p><strong>Authority:</strong> Can declare formal disaster</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h4>Service Desk - 24/7 Emergency Line</h4>
+                        <p><strong>Phone:</strong> EXT. 4357 (Follow emergency prompts)</p>
+                        <p><strong>Emergency Mobile:</strong> 555-4357</p>
+                        <p><strong>First Point of Contact:</strong> For all staff reporting issues</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">👨‍💼</div>
+                    <div>
+                        <h4>CIO - Executive Notification</h4>
+                        <p><strong>Mobile:</strong> 555-0100</p>
+                        <p><strong>Email:</strong> cio@rosebankhospital.org.za</p>
+                        <p><strong>Role:</strong> Executive decisions and external communications</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-process">
+                <h3>Recovery Objectives & Timelines</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>RTO - Recovery Time Objective</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Critical Systems:</strong> 4 hours</p>
+                            <p><strong>Important Systems:</strong> 8 hours</p>
+                            <p><strong>Standard Systems:</strong> 24 hours</p>
+                            <p><strong>Non-essential:</strong> 72 hours</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>RPO - Recovery Point Objective</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Patient Database:</strong> 1 hour</p>
+                            <p><strong>Hospital Management:</strong> 1 hour</p>
+                            <p><strong>File Servers:</strong> 4 hours</p>
+                            <p><strong>Email:</strong> 4 hours</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Communication Plan</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Initial Alert:</strong> 15 minutes</p>
+                            <p><strong>Status Updates:</strong> Every 30 minutes</p>
+                            <p><strong>Resolution ETA:</strong> Provided within 1 hour</p>
+                            <p><strong>All Clear:</strong> Immediate notification</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-process">
+                <h3>Paper-Based Fallback Procedures</h3>
+                <ul class="step-list">
+                    <li><strong>Patient Registration:</strong> Use triplicate forms from emergency kits</li>
+                    <li><strong>Medication Administration:</strong> Follow manual medication charting procedures</li>
+                    <li><strong>Clinical Notes:</strong> Document on paper, transcribe when systems restored</li>
+                    <li><strong>Emergency Kits:</strong> Located in every department nursing station</li>
+                    <li><strong>Data Entry:</strong> IT will assist with bulk data entry after restoration</li>
+                </ul>
+                <button class="btn" onclick="showNotification('Emergency procedure documents can be found in department emergency kits', 'info')">Access Paper Forms Guide</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact IT</h3>
+                    <p>Service Desk: 401 598 7654 (HELP)</p>
+                    <p>Email: helpdesk@rosebankhospital.org.za</p>
+                    <p>Hours: 7:00 AM - 6:00 PM, Mon-Fri</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="support-operations.html">Support Operations</a>
+                    <a href="acquisition.html">Request Equipment</a>
+                    <a href="staff-structure.html">IT Team Directory</a>
+                    <a href="disaster-recovery.html">Emergency Procedures</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Policies</h3>
+                    <a href="security-policy.html">Security Policy</a>
+                    <a href="acceptable-use.html">Acceptable Use Policy</a>
+                    <a href="disaster-recovery.html">Emergency Procedures</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Rosebank Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

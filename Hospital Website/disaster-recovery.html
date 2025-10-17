@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Equipment - Rosebank Hospital IT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🏥</div>
+                    <div class="logo-text">
+                        <h1>Rosebank Hospital</h1>
+                        <p>IT Services Portal</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <a href="support-operations.html" class="btn btn-accent">Get IT Help</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="support-operations.html">Support Operations</a></li>
+                <li><a href="staff-structure.html">IT Team</a></li>
+                <li><a href="security-policy.html">Security Policy</a></li>
+                <li><a href="acceptable-use.html">Acceptable Use</a></li>
+                <li><a href="acquisition.html" class="active">Get Equipment</a></li>
+                <li><a href="disaster-recovery.html">Emergency Procedures</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h2>IT Equipment Acquisition</h2>
+                <p>Request new computers, printers, and software</p>
+            </div>
+
+            <div class="support-process">
+                <h3>Acquisition Process - 5 Simple Steps</h3>
+                
+                <div class="process-flow">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Request</h4>
+                        <p>Submit acquisition form</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Approve</h4>
+                        <p>Manager & IT review</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Procure</h4>
+                        <p>IT places order</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Configure</h4>
+                        <p>IT sets up equipment</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h4>Deliver</h4>
+                        <p>Equipment deployed to you</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>💻 Standard Equipment</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Computers:</strong> HP ProOne 440 G9 AiO</p>
+                        <p><strong>Specs:</strong> i7, 16GB RAM, 1TB SSD, Win11 Pro</p>
+                        <p><strong>Cost:</strong> ~R 25,000 each</p>
+                        <p><strong>Delivery:</strong> 2-3 weeks</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🖨️ Printers</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Model:</strong> HP LaserJet Pro 3303fdw</p>
+                        <p><strong>Type:</strong> A4 Color Laser MFP</p>
+                        <p><strong>Cost:</strong> ~R 8,000 each</p>
+                        <p><strong>Features:</strong> Print, Scan, Copy, Fax</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🎤 Amplifiers</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Model:</strong> ZHUDELE ZDL-9908</p>
+                        <p><strong>Type:</strong> Two-Way Counter System</p>
+                        <p><strong>Cost:</strong> ~R 3,500 each</p>
+                        <p><strong>Use:</strong> Reception & ward counters</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-process">
+                <h3>Budget Approval Levels</h3>
+                
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>Up to R 50,000</h4>
+                        <span class="sla-priority priority-low">FAST TRACK</span>
+                    </div>
+                    <p><strong>Approvers:</strong> Department Head + IT Manager</p>
+                    <p><strong>Timeline:</strong> 3-5 business days</p>
+                </div>
+
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>R 50,001 - R 200,000</h4>
+                        <span class="sla-priority priority-medium">STANDARD</span>
+                    </div>
+                    <p><strong>Approvers:</strong> Department Head + IT Manager + CFO</p>
+                    <p><strong>Timeline:</strong> 1-2 weeks</p>
+                </div>
+
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>Over R 200,000</h4>
+                        <span class="sla-priority priority-high">EXECUTIVE</span>
+                    </div>
+                    <p><strong>Approvers:</strong> Department Head + IT Manager + CFO + Hospital Board</p>
+                    <p><strong>Timeline:</strong> 2-4 weeks</p>
+                </div>
+            </div>
+
+            <div class="support-process">
+                <h3>Request New Equipment</h3>
+                <form id="acquisition-form">
+                    <div class="form-group">
+                        <label for="request-type">What do you need?</label>
+                        <select class="form-control" id="request-type" name="request-type" required>
+                            <option value="">Select equipment type</option>
+                            <option value="computer">New Computer (HP ProOne)</option>
+                            <option value="printer">New Printer (HP LaserJet)</option>
+                            <option value="amplifier">Counter Amplifier (ZHUDELE)</option>
+                            <option value="software">Software License</option>
+                            <option value="other">Other Equipment</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantity Needed</label>
+                        <input type="number" class="form-control" id="quantity" name="quantity" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Equipment Description</label>
+                        <textarea class="form-control" id="description" name="description" placeholder="Please describe what you need and any specific requirements..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="justification">Business Justification</label>
+                        <textarea class="form-control" id="justification" name="justification" placeholder="Why is this equipment needed? What will it be used for? What happens if we don't get it?" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Urgency Level</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="urgency-normal" name="urgency" value="normal" checked>
+                                <label for="urgency-normal">Normal (2-3 weeks)</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="urgency-urgent" name="urgency" value="urgent">
+                                <label for="urgency-urgent">Urgent (1 week)</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="urgency-emergency" name="urgency" value="emergency">
+                                <label for="urgency-emergency">Emergency (24-48 hours)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select class="form-control" id="department" name="department" required>
+                            <option value="">Select your department</option>
+                            <option value="main-block">Main Block</option>
+                            <option value="ward1">Ward 1</option>
+                            <option value="ward2">Ward 2</option>
+                            <option value="ward3">Ward 3</option>
+                            <option value="billing">Billing</option>
+                            <option value="administration">Administration</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="required-date">Required By Date</label>
+                        <input type="date" class="form-control" id="required-date" name="required-date" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">Submit Request</button>
+                </form>
+            </div>
+
+            <div class="support-process">
+                <h3>Emergency Acquisition Process</h3>
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h4>For Critical Situations Only</h4>
+                        <span class="sla-priority priority-critical">EMERGENCY</span>
+                    </div>
+                    <p><strong>Definition:</strong> Equipment failure that critically impacts patient care or hospital operations</p>
+                    <p><strong>Process:</strong> IT Manager can authorize immediate purchase up to R 100,000</p>
+                    <p><strong>Paperwork:</strong> Must be completed within 48 hours after emergency resolution</p>
+                    <p><strong>Contact:</strong> Call Service Desk 401 598 7654 and state "EMERGENCY EQUIPMENT REQUEST"</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact IT</h3>
+                    <p>Service Desk: 401 598 7654 (HELP)</p>
+                    <p>Email: helpdesk@rosebankhospital.org.za</p>
+                    <p>Hours: 7:00 AM - 6:00 PM, Mon-Fri</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="support-operations.html">Support Operations</a>
+                    <a href="acquisition.html">Request Equipment</a>
+                    <a href="staff-structure.html">IT Team Directory</a>
+                    <a href="disaster-recovery.html">Emergency Procedures</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Policies</h3>
+                    <a href="security-policy.html">Security Policy</a>
+                    <a href="acceptable-use.html">Acceptable Use Policy</a>
+                    <a href="disaster-recovery.html">Emergency Procedures</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Rosebank Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
